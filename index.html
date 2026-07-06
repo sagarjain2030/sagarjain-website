@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sagar Jain - Portfolio</title>
+    <title>Sagar Jain - Signal-to-Intelligence Engineer</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,42 +12,398 @@
             <div class="logo">Sagar Jain</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#focus">Focus</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#roadmap">Roadmap</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <button class="menu-toggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </nav>
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section id="home" class="hero">
             <div class="hero-content">
-                <h1>Hi, I'm Sagar Jain</h1>
-                <p>Full Stack Developer | Web Designer | Tech Enthusiast</p>
-                <button class="cta-button">View My Work</button>
+                <div class="hero-label">Senior Software Engineer</div>
+                <h1>Sagar Jain</h1>
+                <p class="hero-tagline">C++ / Computer Vision / Video Pipeline / AI Systems Engineer</p>
+                <p class="hero-intro">I build reliable software close to real-world signals: cameras, streams, systems, and AI.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" data-target="#projects">View Projects</button>
+                    <button class="btn btn-secondary" data-target="#skills">Technical Skills</button>
+                    <button class="btn btn-secondary" data-target="#contact">Contact</button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <svg class="signal-wave" viewBox="0 0 400 100" preserveAspectRatio="none">
+                    <polyline points="0,50 20,35 40,50 60,25 80,50 100,40 120,50 140,30 160,50 180,45 200,50 220,35 240,50 260,25 280,50 300,40 320,50 340,30 360,50 380,45 400,50" 
+                              fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke"/>
+                </svg>
             </div>
         </section>
 
-        <section id="about" class="about">
-            <h2>About Me</h2>
-            <p>I'm a passionate developer with expertise in building modern web applications. I love creating user-friendly interfaces and robust backend solutions.</p>
+        <!-- Technical Focus Section -->
+        <section id="focus" class="technical-focus">
+            <div class="section-header">
+                <h2>Technical Focus</h2>
+                <p>Core domains of expertise and active development</p>
+            </div>
+            <div class="focus-grid">
+                <div class="focus-card">
+                    <div class="focus-icon">
+                        <svg viewBox="0 0 64 64">
+                            <rect x="12" y="20" width="40" height="32" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <line x1="20" y1="20" x2="20" y2="52" stroke="currentColor" stroke-width="1"/>
+                            <line x1="32" y1="20" x2="32" y2="52" stroke="currentColor" stroke-width="1"/>
+                            <line x1="44" y1="20" x2="44" y2="52" stroke="currentColor" stroke-width="1"/>
+                        </svg>
+                    </div>
+                    <h3>Video Pipelines</h3>
+                    <p>Real-time media processing, streaming architectures, frame processing</p>
+                </div>
+                <div class="focus-card">
+                    <div class="focus-icon">
+                        <svg viewBox="0 0 64 64">
+                            <rect x="16" y="16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <rect x="36" y="16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <rect x="16" y="36" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <rect x="36" y="36" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>CUDA / GPU</h3>
+                    <p>Parallel computing, GPU optimization, accelerated algorithms</p>
+                </div>
+                <div class="focus-card">
+                    <div class="focus-icon">
+                        <svg viewBox="0 0 64 64">
+                            <path d="M 20 48 L 32 20 L 44 48 M 26 38 L 38 38" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>C++ Systems</h3>
+                    <p>Low-level systems, multithreading, performance-critical code</p>
+                </div>
+                <div class="focus-card">
+                    <div class="focus-icon">
+                        <svg viewBox="0 0 64 64">
+                            <circle cx="32" cy="32" r="20" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="32" cy="32" r="12" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="32" cy="32" r="4" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Computer Vision</h3>
+                    <p>Image processing, object detection, OpenCV, visual algorithms</p>
+                </div>
+                <div class="focus-card">
+                    <div class="focus-icon">
+                        <svg viewBox="0 0 64 64">
+                            <polyline points="16,40 24,24 32,32 40,16 52,48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Signal Processing</h3>
+                    <p>Filtering, transforms, real-world sensor data analysis</p>
+                </div>
+                <div class="focus-card">
+                    <div class="focus-icon">
+                        <svg viewBox="0 0 64 64">
+                            <rect x="14" y="24" width="8" height="24" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <rect x="28" y="16" width="8" height="32" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <rect x="42" y="20" width="8" height="28" fill="none" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>AI Engineering</h3>
+                    <p>ML/DL integration, inference optimization, systems thinking</p>
+                </div>
+            </div>
         </section>
 
+        <!-- Skills Matrix Section -->
+        <section id="skills" class="skills-matrix">
+            <div class="section-header">
+                <h2>Skills Matrix</h2>
+                <p>Engineering disciplines and tool proficiency</p>
+            </div>
+            <div class="skills-container">
+                <div class="skill-group">
+                    <h3>Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Go</span>
+                        <span class="skill-tag">JavaScript</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Systems</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">Multithreading</span>
+                        <span class="skill-tag">IPC</span>
+                        <span class="skill-tag">Sockets</span>
+                        <span class="skill-tag">REST APIs</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Vision & AI</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">OpenCV</span>
+                        <span class="skill-tag">Image Processing</span>
+                        <span class="skill-tag">Computer Vision</span>
+                        <span class="skill-tag">ML Foundations</span>
+                        <span class="skill-tag">DL Basics</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Media & GPU</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">GStreamer</span>
+                        <span class="skill-tag">Video Pipelines</span>
+                        <span class="skill-tag">FFmpeg</span>
+                        <span class="skill-tag">CUDA Learning</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Cloud & DevOps</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">cPanel Deploy</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Observability</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">OpenTelemetry</span>
+                        <span class="skill-tag">Grafana</span>
+                        <span class="skill-tag">Metrics</span>
+                        <span class="skill-tag">Distributed Tracing</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
         <section id="projects" class="projects">
-            <h2>Featured Projects</h2>
-            <div class="project-grid">
+            <div class="section-header">
+                <h2>Professional Projects</h2>
+                <p>Real-world systems and production engineering</p>
+            </div>
+            <div class="projects-grid">
                 <div class="project-card">
-                    <h3>Project 1</h3>
-                    <p>A responsive web application built with HTML, CSS, and JavaScript.</p>
+                    <div class="project-header">
+                        <h3>Real-time CCTV Rules Engine</h3>
+                        <span class="project-type">Systems / Vision</span>
+                    </div>
+                    <p>High-performance video stream processing system for surveillance analytics. Built with C++ and multithreaded architecture for low-latency rule evaluation on streaming video feeds.</p>
+                    <div class="project-tags">
+                        <span>C++</span>
+                        <span>OpenCV</span>
+                        <span>Multithreading</span>
+                        <span>Video Processing</span>
+                    </div>
                 </div>
                 <div class="project-card">
-                    <h3>Project 2</h3>
-                    <p>Full-stack application with modern technologies and best practices.</p>
+                    <div class="project-header">
+                        <h3>Healthcare Voice AI PoC</h3>
+                        <span class="project-type">AI / Systems</span>
+                    </div>
+                    <p>Proof of concept for AI-powered voice analysis in healthcare. Integrated speech processing pipelines with ML inference, demonstrating signal processing and real-time AI engineering patterns.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Signal Processing</span>
+                        <span>ML Inference</span>
+                        <span>REST APIs</span>
+                    </div>
                 </div>
                 <div class="project-card">
-                    <h3>Project 3</h3>
-                    <p>Mobile-friendly design with focus on user experience.</p>
+                    <div class="project-header">
+                        <h3>Ratia Monitoring Middleware</h3>
+                        <span class="project-type">Systems / Observability</span>
+                    </div>
+                    <p>Distributed systems monitoring middleware with telemetry aggregation. Built OpenTelemetry integration for collecting, processing, and visualizing metrics across service architectures.</p>
+                    <div class="project-tags">
+                        <span>Go</span>
+                        <span>OpenTelemetry</span>
+                        <span>Distributed Systems</span>
+                        <span>Metrics</span>
+                    </div>
                 </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>CUDA + Computer Vision Lab</h3>
+                        <span class="project-type">GPU / Research</span>
+                    </div>
+                    <p>Experimental work in GPU-accelerated computer vision algorithms. Exploring CUDA optimization techniques for image processing and parallel algorithm implementation.</p>
+                    <div class="project-tags">
+                        <span>CUDA</span>
+                        <span>C++</span>
+                        <span>Computer Vision</span>
+                        <span>GPU Optimization</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Web Apps Lab Section -->
+        <section id="apps" class="apps-lab">
+            <div class="section-header">
+                <h2>Web Apps Lab</h2>
+                <p>Experimental tools and visualizations coming to /apps</p>
+            </div>
+            <div class="apps-grid">
+                <div class="app-placeholder">
+                    <div class="app-icon">
+                        <svg viewBox="0 0 64 64">
+                            <rect x="16" y="20" width="32" height="24" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <line x1="24" y1="20" x2="24" y2="44" stroke="currentColor" stroke-width="1"/>
+                            <line x1="32" y1="20" x2="32" y2="44" stroke="currentColor" stroke-width="1"/>
+                            <line x1="40" y1="20" x2="40" y2="44" stroke="currentColor" stroke-width="1"/>
+                        </svg>
+                    </div>
+                    <h3>Signal Visualizer</h3>
+                    <p>Real-time signal waveform visualization and analysis tools</p>
+                </div>
+                <div class="app-placeholder">
+                    <div class="app-icon">
+                        <svg viewBox="0 0 64 64">
+                            <rect x="20" y="24" width="24" height="20" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="32" cy="34" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Image Lab</h3>
+                    <p>Interactive computer vision experiments and image processing demos</p>
+                </div>
+                <div class="app-placeholder">
+                    <div class="app-icon">
+                        <svg viewBox="0 0 64 64">
+                            <polyline points="16,45 24,32 32,38 40,20 48,35 56,25" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <line x1="16" y1="45" x2="56" y2="45" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Metrics Dashboard</h3>
+                    <p>Performance monitoring and telemetry visualization</p>
+                </div>
+                <div class="app-placeholder">
+                    <div class="app-icon">
+                        <svg viewBox="0 0 64 64">
+                            <rect x="16" y="16" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <line x1="24" y1="24" x2="40" y2="40" stroke="currentColor" stroke-width="1"/>
+                            <line x1="40" y1="24" x2="24" y2="40" stroke="currentColor" stroke-width="1"/>
+                        </svg>
+                    </div>
+                    <h3>ML Playground</h3>
+                    <p>Interactive machine learning model demonstrations and experiments</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learning Roadmap Section -->
+        <section id="roadmap" class="learning-roadmap">
+            <div class="section-header">
+                <h2>Learning Roadmap</h2>
+                <p>Current direction and active development areas</p>
+            </div>
+            <div class="roadmap-container">
+                <div class="roadmap-item">
+                    <div class="roadmap-marker"></div>
+                    <div class="roadmap-content">
+                        <h3>OpenCV & Computer Vision</h3>
+                        <p>Deepening knowledge of image processing algorithms, feature detection, and real-world vision applications</p>
+                    </div>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-marker"></div>
+                    <div class="roadmap-content">
+                        <h3>CUDA Programming</h3>
+                        <p>Mastering GPU-accelerated algorithms and optimization patterns for parallel computing</p>
+                    </div>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-marker"></div>
+                    <div class="roadmap-content">
+                        <h3>GStreamer & Video Pipelines</h3>
+                        <p>Building sophisticated multimedia processing pipelines for production systems</p>
+                    </div>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-marker"></div>
+                    <div class="roadmap-content">
+                        <h3>Modern AI Engineering</h3>
+                        <p>Systems thinking in ML/DL: inference optimization, edge deployment, and production AI</p>
+                    </div>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-marker"></div>
+                    <div class="roadmap-content">
+                        <h3>System Design</h3>
+                        <p>Architecting complex distributed systems with emphasis on performance and reliability</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Connect with me on various platforms</p>
+            </div>
+            <div class="contact-grid">
+                <a href="https://github.com" class="contact-card" target="_blank" rel="noopener noreferrer">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 64 64">
+                            <path d="M32,16 C23.2,16 16,23.2 16,32 C16,40.8 21.6,48.2 29.2,50.6 C30.2,50.8 30.6,50.2 30.6,49.6 L30.6,45.8 C24.4,47.2 23.2,43.4 23.2,43.4 C22.4,41 21.2,40.4 21.2,40.4 C19.6,39.2 21.2,39.2 21.2,39.2 C23,39.4 24,41.2 24,41.2 C25.6,44.2 28.4,43.6 30.8,43 C30.8,41.8 31.4,41 32,40.4 C27.2,39.8 22,37.8 22,30.4 C22,28.2 22.8,26.4 24,25 C23.8,24.4 23.2,22.4 24.2,20 C24.2,20 25.6,19.4 30.6,21.8 C32,21.4 33.6,21.2 35.2,21.2 C36.8,21.2 38.4,21.4 39.8,21.8 C44.8,19.4 46.2,20 46.2,20 C47.2,22.4 46.6,24.4 46.4,25 C47.6,26.4 48.4,28.2 48.4,30.4 C48.4,37.8 43.2,39.8 38.4,40.4 C39.2,41.2 40,42.6 40,44.8 L40,49.6 C40,50.2 40.4,50.8 41.4,50.6 C49,48.2 54.4,40.8 54.4,32 C54.4,23.2 47.2,16 38.4,16 Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <div class="contact-info">
+                        <h3>GitHub</h3>
+                        <p>View projects and contributions</p>
+                    </div>
+                </a>
+                <a href="https://linkedin.com" class="contact-card" target="_blank" rel="noopener noreferrer">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 64 64">
+                            <rect x="16" y="20" width="32" height="32" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <line x1="24" y1="32" x2="24" y2="48" stroke="currentColor" stroke-width="2"/>
+                            <line x1="32" y1="32" x2="32" y2="48" stroke="currentColor" stroke-width="2"/>
+                            <line x1="40" y1="32" x2="40" y2="48" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="24" cy="26" r="2" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <div class="contact-info">
+                        <h3>LinkedIn</h3>
+                        <p>Professional network and experience</p>
+                    </div>
+                </a>
+                <a href="mailto:contact@sagarjain.in" class="contact-card">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 64 64">
+                            <rect x="12" y="16" width="40" height="32" fill="none" stroke="currentColor" stroke-width="2" rx="2"/>
+                            <polyline points="12,16 32,30 52,16" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Email</h3>
+                        <p>contact@sagarjain.in</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sagar Jain. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
             </div>
         </section>
 
