@@ -5,5 +5,4 @@ deployment:
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp styles.css $DEPLOYPATH
     - /bin/cp script.js $DEPLOYPATH
-    - /bin/cp -R assets $DEPLOYPATH
     - /bin/cp -R interview-crm $DEPLOYPATH
