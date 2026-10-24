@@ -920,3 +920,349 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* =====================================================
+   Personal Interview CRM — Supplemental Styles
+   These classes are used only on /interview-crm pages
+   and do not affect the main portfolio site.
+   ===================================================== */
+
+/* Coming Soon Banner */
+.coming-soon-banner {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: rgba(255, 193, 7, 0.1);
+    border: 1px solid rgba(255, 193, 7, 0.4);
+    color: #6b4f00;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    width: fit-content;
+}
+
+/* CRM Status Card */
+.crm-status-card {
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: var(--spacing-xl);
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.status-indicator {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-md);
+}
+
+.status-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ffa500;
+    flex-shrink: 0;
+    animation: status-pulse 2s ease-in-out infinite;
+}
+
+@keyframes status-pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.35; }
+}
+
+/* Auth Info Grid */
+.auth-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-md);
+}
+
+.auth-info-card {
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: var(--spacing-lg);
+}
+
+.auth-info-card h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-md);
+}
+
+.auth-info-card em {
+    font-style: italic;
+    font-weight: 500;
+}
+
+.auth-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+}
+
+.auth-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    font-size: 0.92rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+.auth-list .check {
+    color: var(--accent-green);
+    flex-shrink: 0;
+    font-weight: 700;
+    font-size: 0.95rem;
+    margin-top: 1px;
+}
+
+.auth-list .cross {
+    color: #e05050;
+    flex-shrink: 0;
+    font-weight: 700;
+    font-size: 0.95rem;
+    margin-top: 1px;
+}
+
+/* Data Points Grid */
+.data-points-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+.data-point-card {
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: var(--spacing-md);
+    border-left: 3px solid var(--accent-cyan);
+}
+
+.data-point-card h4 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.data-point-card p {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* CRM Section Link Cards */
+.crm-links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.crm-link-card {
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: var(--spacing-lg);
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.crm-link-card:hover {
+    border-color: var(--accent-cyan);
+    box-shadow: 0 8px 24px rgba(0, 212, 255, 0.1);
+    transform: translateY(-4px);
+}
+
+.crm-link-icon {
+    width: 48px;
+    height: 48px;
+    color: var(--accent-cyan);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.crm-link-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.crm-link-card h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.crm-link-card p {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Legal Document Pages */
+.legal-page-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: var(--spacing-xl) var(--spacing-md);
+}
+
+.legal-page-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.legal-page-subtitle {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-bottom: 0;
+}
+
+.legal-meta {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin: var(--spacing-md) 0 var(--spacing-lg);
+    padding: var(--spacing-md);
+    background-color: var(--bg-neutral);
+    border-radius: 4px;
+    border: 1px solid var(--border);
+    line-height: 1.9;
+}
+
+.legal-meta a {
+    color: var(--accent-cyan);
+    text-decoration: none;
+}
+
+.legal-content h2 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-top: var(--spacing-xl);
+    margin-bottom: var(--spacing-md);
+    padding-top: var(--spacing-md);
+    border-top: 1px solid var(--border);
+}
+
+.legal-content h2:first-child {
+    border-top: none;
+    margin-top: 0;
+}
+
+.legal-content h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-sm);
+}
+
+.legal-content p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: var(--spacing-md);
+}
+
+.legal-content ul,
+.legal-content ol {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: var(--spacing-md);
+    padding-left: var(--spacing-lg);
+}
+
+.legal-content li {
+    margin-bottom: 0.5rem;
+}
+
+.legal-content a {
+    color: var(--accent-cyan);
+    text-decoration: none;
+}
+
+.legal-content a:hover {
+    text-decoration: underline;
+}
+
+.legal-content code {
+    background-color: var(--bg-neutral);
+    border: 1px solid var(--border);
+    padding: 0.1rem 0.4rem;
+    border-radius: 3px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.875em;
+    color: var(--accent-cyan);
+}
+
+.legal-content strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+/* Review-required annotation block */
+.review-required {
+    background-color: rgba(255, 193, 7, 0.08);
+    border: 1px solid rgba(255, 193, 7, 0.4);
+    border-left: 4px solid #ffc107;
+    border-radius: 4px;
+    padding: var(--spacing-md);
+    margin: var(--spacing-md) 0;
+    font-size: 0.875rem;
+    color: #5c4400;
+    line-height: 1.7;
+}
+
+.review-required strong {
+    color: #5c4400;
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+/* Responsive: CRM pages */
+@media (max-width: 768px) {
+    .auth-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .data-points-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .legal-page-container {
+        padding: var(--spacing-lg) var(--spacing-sm);
+    }
+}
+
+@media (max-width: 640px) {
+    .crm-links-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .legal-content h2 {
+        font-size: 1.15rem;
+    }
+}

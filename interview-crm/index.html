@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Interview CRM — Track Job Applications &amp; Interviews | Sagar Jain</title>
+    <meta name="description" content="Personal Interview CRM is a private workspace for tracking job applications, recording interview rounds, and storing interview questions and answers. Sign in with Google.">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+    <!--
+        APP URL CONFIGURATION
+        =====================
+        When Personal Interview CRM is publicly deployed on Railway, search for
+        data-app-url="COMING_SOON" and update it to the live URL.
+        Also replace the "Coming Soon" status section with a working launch button.
+        Current status: Application not yet publicly deployed.
+    -->
+
+    <header>
+        <nav class="navbar">
+            <a href="/" class="logo">Sagar Jain</a>
+            <ul class="nav-links">
+                <li><a href="/">← sagarjain.in</a></li>
+                <li><a href="/interview-crm/privacy">Privacy Policy</a></li>
+                <li><a href="/interview-crm/terms">Terms of Service</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ===== Hero Section ===== -->
+        <section id="home" class="hero" style="border-top: none;">
+            <div class="hero-content">
+                <div class="hero-label">Web App Project</div>
+                <h1>Personal Interview CRM</h1>
+                <p class="hero-tagline">Track job applications and interview experiences — privately.</p>
+                <div class="coming-soon-banner">⚙ Coming Soon — Not yet publicly deployed</div>
+                <p class="hero-intro">
+                    Personal Interview CRM is a personal productivity application for managing your job search.
+                    Record applications, log interview rounds, capture the questions you were asked, and keep
+                    your own answers and improved responses — all in a private, account-linked workspace.
+                    Sign in with your Google account to get started.
+                </p>
+            </div>
+            <div class="hero-visual">
+                <svg viewBox="0 0 200 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                     style="max-width: 320px; width: 100%; color: var(--accent-cyan); opacity: 0.65;">
+                    <!-- Clipboard / CRM illustration -->
+                    <rect x="38" y="24" width="124" height="148" rx="6" fill="none" stroke="currentColor" stroke-width="3"/>
+                    <rect x="68" y="14" width="64" height="22" rx="5" fill="none" stroke="currentColor" stroke-width="2"/>
+                    <!-- Row items -->
+                    <circle cx="58" cy="62" r="5" fill="currentColor"/>
+                    <line x1="72" y1="62" x2="146" y2="62" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <circle cx="58" cy="84" r="5" fill="none" stroke="currentColor" stroke-width="2"/>
+                    <line x1="72" y1="84" x2="146" y2="84" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <circle cx="58" cy="106" r="5" fill="currentColor"/>
+                    <line x1="72" y1="106" x2="130" y2="106" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <circle cx="58" cy="128" r="5" fill="none" stroke="currentColor" stroke-width="2"/>
+                    <line x1="72" y1="128" x2="140" y2="128" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <circle cx="58" cy="150" r="5" fill="currentColor"/>
+                    <line x1="72" y1="150" x2="118" y2="150" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </div>
+        </section>
+
+        <!-- ===== Features Section ===== -->
+        <section class="technical-focus">
+            <div class="section-header">
+                <h2>What You Can Do</h2>
+                <p>Features available in Personal Interview CRM</p>
+            </div>
+            <div class="focus-grid">
+
+                <div class="focus-card">
+                    <div class="focus-icon">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="12" y="12" width="40" height="40" rx="4"/>
+                            <line x1="20" y1="24" x2="44" y2="24"/>
+                            <line x1="20" y1="32" x2="44" y2="32"/>
+                            <line x1="20" y1="40" x2="36" y2="40"/>
+                            <circle cx="16" cy="24" r="2" fill="currentColor" stroke="none"/>
+                            <circle cx="16" cy="32" r="2" fill="currentColor" stroke="none"/>
+                            <circle cx="16" cy="40" r="2" fill="currentColor" stroke="none"/>
+                        </svg>
+                    </div>
+                    <h3>Track Job Applications</h3>
+                    <p>Create a record for each position you apply to — company name, role, application date, current status, and priority level.</p>
+                </div>
+
+                <div class="focus-card">
+                    <div class="focus-icon">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="12" y="16" width="40" height="32" rx="3"/>
+                            <line x1="20" y1="26" x2="44" y2="26"/>
+                            <line x1="20" y1="32" x2="44" y2="32"/>
+                            <line x1="20" y1="38" x2="36" y2="38"/>
+                        </svg>
+                    </div>
+                    <h3>Save Job Descriptions</h3>
+                    <p>Keep the full job posting saved alongside each application for easy reference throughout the interview process.</p>
+                </div>
+
+                <div class="focus-card">
+                    <div class="focus-icon">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="32" cy="32" r="18"/>
+                            <line x1="32" y1="20" x2="32" y2="32"/>
+                            <line x1="32" y1="32" x2="42" y2="37"/>
+                        </svg>
+                    </div>
+                    <h3>Update Status &amp; Priority</h3>
+                    <p>Mark applications as active, in-progress, rejected, or on hold. Set priority levels to stay focused on what matters most.</p>
+                </div>
+
+                <div class="focus-card">
+                    <div class="focus-icon">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="14" y="14" width="36" height="40" rx="3"/>
+                            <line x1="22" y1="28" x2="42" y2="28"/>
+                            <line x1="22" y1="36" x2="42" y2="36"/>
+                            <line x1="22" y1="44" x2="34" y2="44"/>
+                            <rect x="22" y="18" width="10" height="6" rx="1"/>
+                        </svg>
+                    </div>
+                    <h3>Record Interview Rounds</h3>
+                    <p>Log each interview stage separately — phone screens, technical rounds, and final panels — linked to the application.</p>
+                </div>
+
+                <div class="focus-card">
+                    <div class="focus-icon">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M 14 18 L 14 42 Q 14 46 18 46 L 46 46 Q 50 46 50 42 L 50 18 Q 50 14 46 14 L 18 14 Q 14 14 14 18 Z"/>
+                            <line x1="22" y1="26" x2="42" y2="26"/>
+                            <line x1="22" y1="34" x2="36" y2="34"/>
+                            <line x1="14" y1="42" x2="10" y2="50"/>
+                        </svg>
+                    </div>
+                    <h3>Store Interview Q&amp;A</h3>
+                    <p>Record the questions you were asked in each interview round and the answers you gave, linked to the specific stage.</p>
+                </div>
+
+                <div class="focus-card">
+                    <div class="focus-icon">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="14,50 26,22 38,36 50,14"/>
+                            <circle cx="50" cy="14" r="4" fill="currentColor" stroke="none"/>
+                            <circle cx="14" cy="50" r="3" fill="none" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Record Improved Answers</h3>
+                    <p>Note better answers alongside your original responses to build a personal bank of prepared interview answers over time.</p>
+                </div>
+
+                <div class="focus-card">
+                    <div class="focus-icon">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="14" y="18" width="36" height="30" rx="3"/>
+                            <line x1="22" y1="28" x2="42" y2="28"/>
+                            <line x1="22" y1="35" x2="34" y2="35"/>
+                            <line x1="36" y1="10" x2="36" y2="20"/>
+                            <line x1="28" y1="10" x2="28" y2="20"/>
+                        </svg>
+                    </div>
+                    <h3>Organize Interview Experiences</h3>
+                    <p>Keep all your interview preparation, feedback, and notes in one structured, searchable private workspace.</p>
+                </div>
+
+                <div class="focus-card">
+                    <div class="focus-icon">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="32" cy="22" r="10"/>
+                            <path d="M 14 54 Q 14 40 32 40 Q 50 40 50 54"/>
+                            <circle cx="32" cy="22" r="4" fill="currentColor" stroke="none"/>
+                        </svg>
+                    </div>
+                    <h3>Private Account Workspace</h3>
+                    <p>Sign in with Google to get a personal workspace. Your records are linked to your account only — other users cannot see your data.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===== Authentication Section ===== -->
+        <section class="skills-matrix">
+            <div class="section-header">
+                <h2>Authentication &amp; Privacy</h2>
+                <p>How Google Sign-In works in Personal Interview CRM</p>
+            </div>
+            <div class="auth-info-grid">
+                <div class="auth-info-card">
+                    <h3>What Google Sign-In does</h3>
+                    <ul class="auth-list">
+                        <li><span class="check">✓</span> Authenticates you using your existing Google account</li>
+                        <li><span class="check">✓</span> Shares your account's unique identifier with the application</li>
+                        <li><span class="check">✓</span> Provides your email address for account display</li>
+                        <li><span class="check">✓</span> Provides your display name for the interface</li>
+                        <li><span class="check">✓</span> Uses only <code>openid</code>, <code>email</code>, and <code>profile</code> scopes</li>
+                    </ul>
+                </div>
+                <div class="auth-info-card">
+                    <h3>What the application does <em>not</em> access</h3>
+                    <ul class="auth-list">
+                        <li><span class="cross">✗</span> Your Google account password</li>
+                        <li><span class="cross">✗</span> Gmail messages or inbox</li>
+                        <li><span class="cross">✗</span> Google Drive files</li>
+                        <li><span class="cross">✗</span> Google Calendar events</li>
+                        <li><span class="cross">✗</span> Google Contacts</li>
+                        <li><span class="cross">✗</span> Any other Google service data</li>
+                    </ul>
+                </div>
+            </div>
+            <p style="text-align: center; color: var(--text-secondary); margin-top: var(--spacing-lg); font-size: 0.95rem;">
+                Personal Interview CRM uses Google OpenID Connect and requests only basic identity information.
+                <br>See the <a href="/interview-crm/privacy" style="color: var(--accent-cyan);">Privacy Policy</a> for a complete description of how your data is handled.
+            </p>
+        </section>
+
+        <!-- ===== Your Private Workspace Section ===== -->
+        <section class="projects">
+            <div class="section-header">
+                <h2>Your Data, Your Workspace</h2>
+                <p>Your records stay private and associated only with your account</p>
+            </div>
+            <div class="data-points-grid">
+                <div class="data-point-card">
+                    <h4>Account-Linked Records</h4>
+                    <p>Every application, interview round, and note you create is linked to your account identifier. Other users cannot view or access your records.</p>
+                </div>
+                <div class="data-point-card">
+                    <h4>No Data Sharing</h4>
+                    <p>Your job applications and interview notes are private. The application does not share your records with other users or third-party services.</p>
+                </div>
+                <div class="data-point-card">
+                    <h4>No Extra Password</h4>
+                    <p>Sign in using your existing Google account. No separate password for this application is created or stored.</p>
+                </div>
+                <div class="data-point-card">
+                    <h4>Data Requests</h4>
+                    <p>To request review, correction, or deletion of your data, contact <a href="mailto:sagarjain2030@gmail.com" style="color: var(--accent-cyan);">sagarjain2030@gmail.com</a>.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Application Status Section ===== -->
+        <section class="learning-roadmap">
+            <div class="section-header">
+                <h2>Application Status</h2>
+                <p>Current development and availability</p>
+            </div>
+            <!-- data-app-url: update to the deployed Railway URL when the app goes live -->
+            <div class="crm-status-card" data-app-url="COMING_SOON">
+                <div class="status-indicator">
+                    <span class="status-dot" aria-hidden="true"></span>
+                    In Development
+                </div>
+                <h3 style="font-size: 1.4rem; margin-bottom: var(--spacing-md); color: var(--text-primary);">Coming Soon</h3>
+                <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: var(--spacing-lg);">
+                    Personal Interview CRM is currently under development and is not yet publicly deployed.
+                    Sign-in and full application access will be available at launch.
+                </p>
+                <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                    Questions or interest?
+                    Contact <a href="mailto:sagarjain2030@gmail.com" style="color: var(--accent-cyan);">sagarjain2030@gmail.com</a>.
+                </p>
+            </div>
+        </section>
+
+        <!-- ===== Information Links Section ===== -->
+        <section class="contact">
+            <div class="section-header">
+                <h2>Application Information</h2>
+                <p>Policies, documentation, and support for Personal Interview CRM</p>
+            </div>
+            <div class="crm-links-grid">
+
+                <a href="/interview-crm/privacy" class="crm-link-card">
+                    <div class="crm-link-icon">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M 32 10 L 54 20 L 54 36 Q 54 52 32 58 Q 10 52 10 36 L 10 20 Z"/>
+                            <line x1="32" y1="28" x2="32" y2="46"/>
+                            <circle cx="32" cy="24" r="2" fill="currentColor" stroke="none"/>
+                        </svg>
+                    </div>
+                    <h3>Privacy Policy</h3>
+                    <p>How Personal Interview CRM handles your data and Google account information</p>
+                </a>
+
+                <a href="/interview-crm/terms" class="crm-link-card">
+                    <div class="crm-link-icon">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="14" y="10" width="36" height="44" rx="3"/>
+                            <line x1="22" y1="22" x2="42" y2="22"/>
+                            <line x1="22" y1="30" x2="42" y2="30"/>
+                            <line x1="22" y1="38" x2="42" y2="38"/>
+                            <line x1="22" y1="46" x2="34" y2="46"/>
+                        </svg>
+                    </div>
+                    <h3>Terms of Service</h3>
+                    <p>Terms and conditions for using Personal Interview CRM</p>
+                </a>
+
+                <a href="mailto:sagarjain2030@gmail.com" class="crm-link-card">
+                    <div class="crm-link-icon">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="12" y="16" width="40" height="32" rx="2"/>
+                            <polyline points="12,16 32,32 52,16"/>
+                        </svg>
+                    </div>
+                    <h3>Contact &amp; Support</h3>
+                    <p>Questions or support requests: sagarjain2030@gmail.com</p>
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2026 Sagar Jain &mdash;
+            <a href="/interview-crm" style="color: rgba(255,255,255,0.75); text-decoration: none;">Personal Interview CRM</a> &mdash;
+            <a href="/interview-crm/privacy" style="color: rgba(255,255,255,0.75); text-decoration: none;">Privacy Policy</a> &mdash;
+            <a href="/interview-crm/terms" style="color: rgba(255,255,255,0.75); text-decoration: none;">Terms of Service</a> &mdash;
+            <a href="/" style="color: rgba(255,255,255,0.75); text-decoration: none;">sagarjain.in</a>
+        </p>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>
